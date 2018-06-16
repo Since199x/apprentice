@@ -1,0 +1,41 @@
+<div class="columns">
+    <div class="column"></div>
+    <div class="column">
+        <section class="hero is-primary">
+            <div class="hero-body">
+                <div class="container">
+                    <h1 class="title">
+                        Register 
+                    </h1>
+                    <h2 class="subtitle">
+                        Your basic info
+                    </h2>
+                </div>
+            </div>
+        </section>
+        <form action="/register/insert" method="POST">
+            <div>
+                <br>
+            </div>
+            <input class="input is-primary" name="fullname" type="text" placeholder="Fullname">
+            <div>
+                <br>
+            </div>
+            <input class="input is-primary" name="email" type="email" placeholder="sample@xxx.com">
+            <div>
+                <br>
+            </div>
+            <input class="input is-primary" name="password" type="password" placeholder="Password">
+            <div>
+                <br>
+            </div>
+            <input class="input is-primary" name="confirm-password" type="password" placeholder="Confirm password">
+            <div>
+                <br>
+            </div>
+            <input class="button is-primary" type="submit" style="float:right" value="register" title="สมัครสมาชิก">
+        </form>
+        <a href="/login" style="float:right;margin-right: 5px;" title="เข้าสู่ระบบ"><button class="button is-info">login</button></a>
+    </div>
+    <div class="column"></div>
+</div>

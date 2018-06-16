@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="<?php echo $ENCODING; ?>" />
+		<title>Powered by <?php echo $PACKAGE; ?></title>
+		<base href="<?php echo $SCHEME.'://'.$HOST.':'.$PORT.$BASE.'/'; ?>" />
+		<link rel="stylesheet" href="lib/code.css" type="text/css" />
+		<link rel="stylesheet" href="ui/css/base.css" type="text/css" />
+		<link rel="stylesheet" href="ui/css/theme.css" type="text/css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<style>
+			html,body {
+				width: 100%;
+				height: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<br>
+		<?php echo $this->render(Base::instance()->get('content')); ?>
+	</body>
+</html>
